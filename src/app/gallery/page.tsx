@@ -21,13 +21,13 @@ export default function Gallery() {
   return (
     <>
       {/* ヒーローセクション */}
-      <section className="relative py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50">
+      <section className="relative py-20 bg-gradient-to-br from-pink-50 via-sky-50 to-cyan-50">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-pink-300/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-sky-300/20 rounded-full blur-3xl"></div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
               ギャラリー
             </span>
           </h1>
@@ -44,7 +44,7 @@ export default function Gallery() {
             {categories.map((category) => (
               <button
                 key={category}
-                className="px-6 py-3 bg-gradient-to-r from-pink-50 to-purple-50 text-gray-700 rounded-full hover:from-pink-100 hover:to-purple-100 transition-all duration-300 border border-pink-200 hover:border-pink-300 font-medium"
+                className="px-6 py-3 bg-gradient-to-r from-pink-50 to-sky-50 text-gray-700 rounded-full hover:from-pink-100 hover:to-sky-100 transition-all duration-300 border border-pink-200 hover:border-pink-300 font-medium"
               >
                 {category}
               </button>
@@ -62,7 +62,7 @@ export default function Gallery() {
                 key={artwork.id}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
               >
-                <div className="aspect-square bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 flex items-center justify-center relative overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-pink-100 via-sky-100 to-cyan-50 flex items-center justify-center relative overflow-hidden">
                   <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
                     {artwork.image}
                   </div>
@@ -85,11 +85,11 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* インスタグラム連携セクション */}
-      <section className="py-20 bg-gradient-to-r from-pink-50 to-purple-50">
+      {/* Instagram セクション */}
+      <section className="py-20 bg-gradient-to-r from-pink-50 to-sky-50">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
               Instagram
             </span>
           </h2>
@@ -106,7 +106,7 @@ export default function Gallery() {
               href="https://instagram.com/kotonail_official"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
+              className="inline-block bg-gradient-to-r from-pink-500 to-sky-300 text-gray-800 px-6 py-3 rounded-full hover:from-pink-600 hover:to-sky-400 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
             >
               フォローする
             </a>
@@ -119,7 +119,7 @@ export default function Gallery() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
                 技術へのこだわり
               </span>
             </h2>
@@ -129,8 +129,8 @@ export default function Gallery() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl">
-              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="text-center p-8 bg-gradient-to-br from-pink-50 to-sky-50 rounded-2xl">
+              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-sky-300 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">🎨</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">オリジナルデザイン</h3>
@@ -139,8 +139,8 @@ export default function Gallery() {
               </p>
             </div>
 
-            <div className="text-center p-8 bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="text-center p-8 bg-gradient-to-br from-sky-50 to-cyan-50 rounded-2xl">
+              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-sky-400 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">⏰</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">丁寧な施術</h3>
@@ -149,8 +149,8 @@ export default function Gallery() {
               </p>
             </div>
 
-            <div className="text-center p-8 bg-gradient-to-br from-indigo-50 to-pink-50 rounded-2xl">
-              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="text-center p-8 bg-gradient-to-br from-cyan-50 to-pink-50 rounded-2xl">
+              <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl">💎</span>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-4">高品質な材料</h3>
@@ -163,30 +163,22 @@ export default function Gallery() {
       </section>
 
       {/* CTA セクション */}
-      <section className="py-20 bg-gradient-to-r from-pink-50 to-purple-50">
+      <section className="py-20 bg-gradient-to-r from-pink-50 to-sky-50">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
               あなたも美しいネイルを体験してみませんか
             </span>
           </h2>
           <p className="text-lg text-gray-600 mb-8">
             お客様のご希望に合わせたオリジナルデザインをご提案いたします
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              ご予約・お問い合わせ
-            </Link>
-            <Link
-              href="/menu"
-              className="bg-white text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-50 transition-all duration-300 border border-pink-200 shadow-md hover:shadow-lg"
-            >
-              メニューを見る
-            </Link>
-          </div>
+          <Link
+            href="/contact"
+            className="inline-block bg-gradient-to-r from-pink-500 to-sky-300 text-gray-800 px-8 py-4 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-sky-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          >
+            ご予約・お問い合わせ
+          </Link>
         </div>
       </section>
     </>

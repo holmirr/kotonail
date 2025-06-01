@@ -7,12 +7,12 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex justify-end md:justify-between items-center p-4 bg-white/80 backdrop-blur-md border-b border-pink-100 relative shadow-lg">
-      <div className="text-2xl font-bold absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0">
+    <div className="flex justify-end md:justify-between items-center p-4 bg-white/80 border-b border-pink-100 relative shadow-lg">
+      <Link href="/" className="text-2xl font-bold absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0">
         <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
           KotoNail
         </span>
-      </div>
+      </Link>
       <nav className="hidden md:flex items-center gap-8 text-lg">
         <Link 
           href="/" 
@@ -61,42 +61,42 @@ export default function Header() {
       </button>
       {
         isOpen && (
-          <div className="fixed inset-0 z-10 bg-gradient-to-br from-pink-50/95 via-purple-50/95 to-indigo-50/95 backdrop-blur-lg flex flex-col items-center justify-center">
-            <nav className="flex flex-col items-center gap-8 text-xl">
+          <div className="fixed top-20 right-0 left-0 bottom-0 z-1000 bg-black/80 py-10">
+            <nav className="flex flex-col items-center gap-8 text-xl max-w-md my-auto mx-auto">
               <Link 
                 href="/" 
-                className="text-gray-700 hover:text-pink-500 transition-colors duration-300 font-medium"
+                className="text-white hover:text-pink-500 transition-colors duration-300 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Home
+                ホーム
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-700 hover:text-pink-500 transition-colors duration-300 font-medium"
+                className="text-white hover:text-pink-500 transition-colors duration-300 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                About
+                セラピスト
               </Link>
               <Link 
                 href="/menu" 
-                className="text-gray-700 hover:text-pink-500 transition-colors duration-300 font-medium"
+                className="text-white hover:text-pink-500 transition-colors duration-300 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Menu
+                メニュー
               </Link>
               <Link 
                 href="/gallery" 
-                className="text-gray-700 hover:text-pink-500 transition-colors duration-300 font-medium"
+                className="text-white hover:text-pink-500 transition-colors duration-300 font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Gallery
+                ギャラリー
               </Link>
               <Link 
                 href="/contact" 
                 className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-3 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                ご予約
               </Link>
             </nav>
           </div>

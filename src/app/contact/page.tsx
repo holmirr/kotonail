@@ -30,13 +30,13 @@ export default function Contact() {
   return (
     <>
       {/* ヒーローセクション */}
-      <section className="relative py-20 bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50">
+      <section className="relative py-20 bg-gradient-to-br from-pink-50 via-sky-50 to-cyan-50">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-pink-300/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-sky-300/20 rounded-full blur-3xl"></div>
         
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
               ご予約・お問い合わせ
             </span>
           </h1>
@@ -51,9 +51,9 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* フォーム */}
-            <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-2xl shadow-lg">
+            <div className="bg-gradient-to-br from-pink-50 to-sky-50 p-8 rounded-2xl shadow-lg">
               <h2 className="text-3xl font-bold text-gray-800 mb-8">
-                <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
                   ご予約フォーム
                 </span>
               </h2>
@@ -183,7 +183,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 rounded-xl text-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="w-full bg-gradient-to-r from-pink-500 to-sky-400 text-white py-4 rounded-xl text-lg font-semibold hover:from-pink-600 hover:to-sky-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   送信する
                 </button>
@@ -194,61 +194,60 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                  <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
                     サロン情報
                   </span>
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-sky-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm">📍</span>
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">住所</h4>
-                      <p className="text-gray-600">〒123-4567<br />東京都渋谷区○○ 1-2-3<br />○○ビル 3F</p>
+                      <p className="text-gray-600">〒501-1174<br />岐阜県岐阜市小野622-6<br /></p>
                     </div>
                   </div>
 
+                  
                   <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white text-sm">📞</span>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">電話番号</h4>
-                      <p className="text-gray-600">03-1234-5678</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-6 h-6 bg-gradient-to-r from-pink-500 to-sky-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm">⏰</span>
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-800">営業時間</h4>
                       <div className="text-gray-600">
-                        <p>月〜金：10:00 - 19:00</p>
-                        <p>土曜日：9:00 - 18:00</p>
-                        <p>日曜日：10:00 - 17:00</p>
-                        <p className="text-pink-600 font-semibold mt-2">定休日：祝日</p>
+                        <p>月〜金：10:00 - 22:00</p>
+                        <p>土曜日：10:00 - 22:00</p>
+                        <p>日曜日：10:00 - 22:00</p>
+                        <p className="text-pink-600 font-semibold mt-2">定休日：不定休</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-2xl">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  お電話でのご予約も承ります
+              <div className="text-center bg-gradient-to-br from-pink-50 to-sky-50 p-8 rounded-2xl">
+                <h3 id="sns-reservation" className="text-xl font-bold text-gray-800 mb-4">
+                  インスタグラム・LINEでのご予約も承ります
                 </h3>
                 <p className="text-gray-600 mb-6">
-                  お急ぎの場合やご質問がある場合は、お気軽にお電話ください。
+                  お急ぎの場合やご質問は、下記SNSにてお気軽にお問い合わせください。
                 </p>
+                <div className="flex flex-col items-center justify-center gap-4">
                 <a
-                  href="tel:03-1234-5678"
-                  className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
+                  href="#instagram-profile"
+                  className="inline-block bg-gradient-to-r from-pink-500 to-sky-400 text-white px-6 py-3 rounded-full hover:from-pink-600 hover:to-sky-500 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
                 >
-                  📞 電話で予約する
+                  <span role="img" aria-label="Instagram">📸</span> Instagram
                 </a>
+                <a
+                  href="#line-account"
+                  className="inline-block bg-gradient-to-r from-green-400 to-teal-500 text-white px-6 py-3 rounded-full hover:from-green-500 hover:to-teal-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
+                >
+                  <span role="img" aria-label="LINE">💬</span> 公式LINE
+                </a>
+                </div>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg">
@@ -261,16 +260,12 @@ export default function Contact() {
                     完全予約制となっております
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-sky-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
                     キャンセルは前日までにお願いします
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-cyan-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
                     爪の状態により施術時間が変わる場合があります
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-pink-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    初回のお客様は30分のカウンセリング込み
                   </li>
                 </ul>
               </div>
@@ -280,21 +275,21 @@ export default function Contact() {
       </section>
 
       {/* アクセスマップ */}
-      <section className="py-20 bg-gradient-to-r from-pink-50 to-purple-50">
+      <section className="py-20 bg-gradient-to-r from-pink-50 to-sky-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
                 アクセス
               </span>
             </h2>
             <p className="text-lg text-gray-600">
-              駅から徒歩3分の好立地
+              岐阜大学から車で約5分
             </p>
           </div>
 
           <div className="bg-white p-8 rounded-2xl shadow-lg">
-            <div className="aspect-video bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <div className="aspect-video bg-gradient-to-br from-pink-100 to-sky-100 rounded-xl flex items-center justify-center mb-6">
               <div className="text-center">
                 <div className="text-6xl mb-4">🗺️</div>
                 <p className="text-gray-600">地図はこちらに表示されます</p>
@@ -302,22 +297,22 @@ export default function Contact() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4">電車でお越しの場合</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">バスでお越しの場合</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-pink-500 rounded-full mr-3"></span>
-                    JR○○線「○○駅」東口より徒歩3分
+                    岐阜バス「岐阜大学病院」下車
                   </li>
                   <li className="flex items-center">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
-                    東京メトロ○○線「○○駅」A2出口より徒歩5分
+                    <span className="w-2 h-2 bg-sky-500 rounded-full mr-3"></span>
+                    車でお迎えに参ります
                   </li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">お車でお越しの場合</h3>
                 <p className="text-gray-600">
-                  近隣にコインパーキングがございます。<br />
+                  サロンに駐車場がございます。<br />
                   お車でお越しの際は事前にお知らせください。
                 </p>
               </div>

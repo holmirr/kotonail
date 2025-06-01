@@ -32,7 +32,7 @@ export default function RootLayout({
               {/* サロン情報 */}
               <div className="md:col-span-2">
                 <h3 className="text-2xl font-bold mb-4">
-                  <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-pink-400 to-sky-400 bg-clip-text text-transparent">
                     KotoNail
                   </span>
                 </h3>
@@ -42,13 +42,13 @@ export default function RootLayout({
                   特別な時間をお過ごしください。
                 </p>
                 <div className="flex space-x-4">
-                  <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-sky-300 rounded-full flex items-center justify-center">
                     <span className="text-sm">📱</span>
                   </div>
-                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-sky-400 rounded-full flex items-center justify-center">
                     <span className="text-sm">📧</span>
                   </div>
-                  <div className="w-8 h-8 bg-gradient-to-r from-indigo-500 to-pink-600 rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-gradient-to-r from-sky-400 to-pink-600 rounded-full flex items-center justify-center">
                     <span className="text-sm">📍</span>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ export default function RootLayout({
               
               {/* サロン情報 */}
               <div>
-                <h4 className="text-lg font-semibold mb-4 text-purple-300">サロン情報</h4>
+                <h4 className="text-lg font-semibold mb-4 text-sky-300">サロン情報</h4>
                 <div className="space-y-3 text-gray-300 text-sm">
                   <div>
                     <p className="font-semibold text-white">営業時間</p>
