@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex justify-end md:justify-between items-center p-4 bg-white/80 border-b border-pink-100 relative shadow-lg">
+    <div className="flex justify-end md:justify-between items-center p-4 relative">
       <Link href="/" className="text-2xl font-bold absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0">
         <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
           KotoNail
@@ -61,7 +61,7 @@ export default function Header() {
       </button>
       {
         isOpen && (
-          <div className="fixed top-20 right-0 left-0 bottom-0 z-1000 bg-black/80 py-10">
+          <div className="fixed top-16 md:top-20 right-0 left-0 bottom-0 z-1000 bg-black/80 py-10">
             <nav className="flex flex-col items-center gap-8 text-xl max-w-md my-auto mx-auto">
               <Link 
                 href="/" 

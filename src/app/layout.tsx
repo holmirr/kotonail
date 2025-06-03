@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <header className="fixed top-0 left-0 w-full h-16 z-50">
+        <header className="fixed top-0 left-0 w-full h-16 md:h-20 z-50 bg-white/80 border-b border-pink-100 shadow-lg">
           <Header />
         </header>
-        <main className="mt-20">
+        <main className="mt-16 md:mt-20">
           {children}
         </main>
         <footer className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white">

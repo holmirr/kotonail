@@ -5,38 +5,34 @@ export default function About() {
   return (
     <>
       {/* ヒーローセクション */}
-      <section className="relative py-20 bg-gradient-to-br from-pink-50 via-sky-50 to-cyan-50">
+      <section className="relative py-10 bg-gradient-to-br from-pink-50 via-sky-50 to-cyan-50">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-pink-300/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-sky-300/20 rounded-full blur-3xl"></div>
-        
+
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-pink-500 to-sky-400 bg-clip-text text-transparent">
               セラピスト紹介
             </span>
           </h1>
-          <p className="text-xl text-gray-800 mb-8">
+          <p className="md:text-xl text-gray-800 mb-8">
             経験豊富なプロフェッショナルがあなたの美しさをサポート
           </p>
         </div>
       </section>
 
       {/* メインセラピスト紹介 */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white bg-gradient-to-br from-pink-50 via-sky-50 to-cyan-50">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-gradient-to-br from-pink-200 to-sky-200 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="text-6xl">👩‍💼</div>
-              </div>
-            </div>
-            
+          <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
+            <Image src="/images/therapist.jpg" alt="therapist profile" width={800} height={800} className="object-cover rounded-full md:w-100 md:h-100 w-80 h-80" />
+
             <div className="space-y-6">
               <div className="px-10">
-                <h2 className="text-4xl font-bold text-gray-800 mb-2">原　琴音</h2>
-                <p className="text-lg text-pink-600 font-semibold">代表・ネイリスト</p>
+                <h2 className="md:text-4xl text-3xl font-bold text-gray-800 mb-2">原　琴音</h2>
+                <p className="md:text-lg text-pink-600 font-semibold">代表・ネイリスト</p>
               </div>
-              
+
               <div className="space-y-4 text-gray-600 leading-relaxed px-10">
                 <p>
                   ネイル業界で経験を積み、名古屋の人気ネイルサロンで技術を磨いてまいりました。
@@ -51,7 +47,7 @@ export default function About() {
                   高品質なサービスを提供することをお約束いたします。
                 </p>
               </div>
-              
+
               <div className="bg-gradient-to-r from-pink-50 to-sky-50 p-6 rounded-2xl px-10">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">経歴</h3>
                 <ul className="space-y-2 text-gray-600">
@@ -79,7 +75,7 @@ export default function About() {
       </section>
 
       {/* サロンの特徴 */}
-      <section className="py-20 px-10 bg-gradient-to-r from-pink-50 to-sky-50">
+      <section className="pb-20 pt-10 px-10 bg-gradient-to-r from-pink-50 to-sky-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">

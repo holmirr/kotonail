@@ -8,30 +8,22 @@ import homePc from "../../public/images/home_pc.png";
 import homeSv from "../../public/images/home_sv.png";
 import { playfairDisplay } from "@/fonts";
 
-// スライドショー用の画像リスト (ダミー画像URLに置き換え)
-const slideshowImages = [
-  "https://picsum.photos/seed/picsum1/1200/800",
-  "https://picsum.photos/seed/picsum2/1200/800",
-  "https://picsum.photos/seed/picsum3/1200/800",
-  "https://picsum.photos/seed/picsum4/1200/800",
-];
 
 export default function Home() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setIsLoading(true);
       setCurrentImageIndex((prevIndex) =>
-        (prevIndex + 1) % slideshowImages.length
+        (prevIndex + 1) % 7 + 1
       );
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(timer);
   }, []);
 
-  const currentImageUrl = slideshowImages[currentImageIndex];
 
   return (
     <>
@@ -60,13 +52,12 @@ export default function Home() {
       {/* ヒーローセクション */}
       <section className="relative py-20 overflow-hidden">
         {isLoading && (
-          <div className="absolute inset-0 bg-pink-100/50 flex items-center justify-center">
+          <div className="absolute inset-0 bg-pink-100/50 flex items-center justify-center z-100">
             <div className="w-12 h-12 border-t-2 border-b-2 border-white rounded-full animate-spin"></div>
           </div>
         )}
         <Image
-          key={currentImageUrl}
-          src={currentImageUrl}
+          src={`/images/nail${currentImageIndex}.jpg`}
           alt="KotoNail サービスイメージ"
           layout="fill"
           objectFit="cover"
