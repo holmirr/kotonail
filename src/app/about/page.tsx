@@ -25,7 +25,7 @@ export default function About() {
       <section className="py-20 bg-white bg-gradient-to-br from-pink-50 via-sky-50 to-cyan-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center justify-items-center">
-            <Image src="/images/therapist.jpg" alt="therapist profile" width={800} height={800} className="object-cover rounded-full md:w-100 md:h-100 w-80 h-80" />
+            <Image src="/images/therapist.JPG" alt="therapist profile" width={800} height={800} className="object-cover rounded-full md:w-100 md:h-100 w-80 h-80" />
 
             <div className="space-y-6">
               <div className="px-10">

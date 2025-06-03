@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         )}
         <Image
-          src={`/images/nail${currentImageIndex}.jpg`}
+          src={`/images/nail${currentImageIndex}.JPG`}
           alt="KotoNail サービスイメージ"
           layout="fill"
           objectFit="cover"
