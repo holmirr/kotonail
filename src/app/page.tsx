@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import homePc from "../../public/images/home_pc.png";
 import homeSv from "../../public/images/home_sv.png";
 import { playfairDisplay } from "@/fonts";
-
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(1);
@@ -24,11 +24,13 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
-
   return (
     <>
+      {/* 新しいヒーローセクション */}
+      <HeroSection />
+
       {/* 画像セクション */}
-      <section className="relative h-[calc(100vh-4rem)] overflow-hidden">
+      {/* <section className="relative h-[calc(100vh-4rem)] overflow-hidden">
         <Image 
           src={homePc}
           alt="ネイルサロンの写真" 
@@ -45,9 +47,9 @@ export default function Home() {
           priority
           placeholder="blur"
         />
-        {/* 軽いオーバーレイ */}
+       
         
-      </section>
+      </section> */}
 
       {/* ヒーローセクション */}
       <section className="relative py-20 overflow-hidden">

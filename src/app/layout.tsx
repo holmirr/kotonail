@@ -19,6 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+      </head>
       <body>
         <header className="fixed top-0 left-0 w-full h-16 md:h-20 z-50 bg-white/80 border-b border-pink-100 shadow-lg">
           <Header />
